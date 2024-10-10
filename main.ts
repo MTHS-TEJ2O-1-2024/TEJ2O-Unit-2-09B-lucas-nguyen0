@@ -46,7 +46,7 @@ input.onButtonPressed(Button.A, function () {
 
 // show score
 input.onButtonPressed(Button.B, function () {
-    basic.showNumber(winsNumber)
+    basic.showString("Score: " + winsNumber)
     basic.pause(1000)
     basic.showIcon(IconNames.Happy)
 })
