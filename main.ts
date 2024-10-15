@@ -32,7 +32,7 @@ if (randomNumber == 2) {
     basic.showIcon(IconNames.Scissors)
 }
 
-    basic.pause(1000)
+    basic.pause(5000)
     basic.showIcon(IconNames.Happy)
 })
 
@@ -46,6 +46,7 @@ input.onButtonPressed(Button.A, function () {
 
 // show score
 input.onButtonPressed(Button.B, function () {
+    basic.clearScreen()
     basic.showString("Score: " + winsNumber)
     basic.pause(1000)
     basic.showIcon(IconNames.Happy)
